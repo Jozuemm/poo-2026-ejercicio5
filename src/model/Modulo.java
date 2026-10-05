@@ -55,12 +55,12 @@ public abstract class Modulo implements Comparable <Modulo>{
         }
 
         this.id = id;
-        this.nombre = nombre;
+        this.nombre = nombre.trim();//Limpiar el nombre de espacios
         this.salud = salud;
         this.saludMaxima = saludMaxima;
         this.costo = costo;
         this.posicion = posicion;
-        this.construido = false;
+        this.construido = construido;//Declarar el estado que se recibe en el constructor
         this.recursos = recursos;
     }
 
@@ -86,8 +86,6 @@ public abstract class Modulo implements Comparable <Modulo>{
     public int getId(){
         return id;
     }
-
-    
 
     public String getNombre(){
         return nombre;
@@ -131,8 +129,8 @@ public abstract class Modulo implements Comparable <Modulo>{
     public boolean getConstruido(){
         return construido;
     }
-
-    public Recursos getRecursos(){
+// el protected hace que sea visible para las clases hijas y para las clases del mismo paquete
+    protected Recursos getRecursos(){
         return recursos;
     }
 
