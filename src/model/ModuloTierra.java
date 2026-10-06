@@ -50,7 +50,7 @@ public class ModuloTierra extends Modulo {
 
     @Override
     public String toString() {
-        return super.toString() + "Modulo Tierra: " + "Capacidad de descarga: " + capacidadDescarga + " Consumo de energia: " + consumoEnergia;
+        return super.toString() + " | Tipo: Tierra" + " | Capacidad de descarga: " + capacidadDescarga + " | Consumo de energia: " + consumoEnergia;
     }
     
 }

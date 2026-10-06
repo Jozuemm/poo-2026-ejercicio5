@@ -30,7 +30,7 @@ public class ModuloEnergia extends Modulo{
 
     @Override 
     public String toString() {
-        return super.toString() + "Energia por ciclo: " + energiaPorCiclo;
+        return super.toString() + " | Tipo: Energia" + " | Energia por ciclo: " + energiaPorCiclo;
     }
 
     

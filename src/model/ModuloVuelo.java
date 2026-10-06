@@ -45,7 +45,7 @@ public class ModuloVuelo extends Modulo{
 
     @Override 
     public String toString() {
-        return super.toString() + "Energia de Vuelo  " + "Datos por ciclo: " + datosPorCiclo + " Consumo de energia: " + consumoEnergia;
+        return super.toString() + " | Tipo: Vuelo" + " | Datos por ciclo: " + datosPorCiclo + " | Consumo de energia: " + consumoEnergia;
     }
     
 }
