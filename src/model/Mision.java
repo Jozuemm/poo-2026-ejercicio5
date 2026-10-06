@@ -23,7 +23,7 @@ public class Mision {
         if (!modulos.isEmpty()) {//Evitamos repetir carga a una mision que ya tiene modulos
             return;
         }
-// agregamos 4 modulos de energia
+// 4 modulos de energia
         agregarModulo(new ModuloEnergia(1, "Panel solar", 100, 100, 50, new Posicion(0, 0), true, recursos, 20));
         
         agregarModulo(new ModuloEnergia(2, "Panel solar extra", 80, 100, 40, new Posicion(1, 0), true, recursos, 15));
@@ -32,14 +32,14 @@ public class Mision {
 
         agregarModulo(new ModuloEnergia(4, "Panel solar de respaldo", 90, 100, 30, new Posicion(3, 0), true, recursos, 10));
 
-// ahora van 3 de vuelo
+// 3 de vuelo
         agregarModulo(new ModuloVuelo(5, "Camara principal", 100, 100, 120, new Posicion(0, 1), true, recursos, 15, 10));
 
         agregarModulo(new ModuloVuelo(6, "Sensor de temperatura", 85, 100, 80, new Posicion(1, 1), true, recursos, 10, 5));
 
         agregarModulo(new ModuloVuelo(7, "Sensor de radiacion", 100, 100, 100, new Posicion(2, 1), true, recursos, 12, 8));
     
-// y de ultimo los 3 de tierra
+// 3 de tierra
     
         agregarModulo(new ModuloTierra(8, "Antena principal", 100, 100, 150, new Posicion(0, 2), true, recursos, 20, 10));
 
